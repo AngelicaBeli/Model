@@ -1,3 +1,4 @@
+<?php
 class ConexaoBD{
 private $serverName =
 "localhost"; private
@@ -9,3 +10,4 @@ public function conectar()
 $conn = new mysqli($this->serverName, $this->userName, $this->password, $this->dbName);
 return $conn;
 }
+?>
