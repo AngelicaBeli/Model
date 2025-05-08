@@ -70,8 +70,7 @@ public function inserirBD(){
     die("Connection failed: " . $conn->connect_error);
     }
     $sql = "INSERT INTO experienciaprofissional (idusuario, inicio, fim, empresa, descricao)
-    VALUES ('".$this->idusuario."','".$this->inicio."','".$this->fim."','".$this-
-    >empresa."','".$this->descricao."')";
+    VALUES ('".$this->idusuario."','".$this->inicio."','".$this->fim."','".$this->empresa."','".$this->descricao."')";
     if ($conn->query($sql) === true) {
     $this->id = mysqli_insert_id($conn);
     $conn->close();

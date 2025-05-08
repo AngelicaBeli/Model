@@ -61,8 +61,7 @@ $conn = $con->conectar();
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO formacaoAcademica (idusuario, inicio, fim, descricao)VALUES ('".$this-
->idusuario."','".$this->inicio."','".$this->fim."','".$this->descricao."')";
+$sql = "INSERT INTO formacaoAcademica (idusuario, inicio, fim, descricao)VALUES ('".$this->idusuario."','".$this->inicio."','".$this->fim."','".$this->descricao."')";
 if ($conn->query($sql) === true) {
 $this->id = mysqli_insert_id($conn);
 $conn->close();
